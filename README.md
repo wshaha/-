@@ -1,1 +1,14 @@
-# -
+先启动 EurekaServerApplication
+跟着启动 IndexCodesApplication 
+然后启动 IndexDataApplication
+接着启动 TrendTradingBackTestServiceApplication
+随后启动 TrendTradingBackTestViewApplication
+最后启动 IndexZuulServiceApplication -
+
+量化投资策略
+
+金叉死叉策略其实就是双均线策略。策略思想是：当短期均线上穿长期均线时，形成金叉，此时买入股票。当短期均线下穿长期均线时，形成死叉，此时卖出股票。研究表明，双均线系统虽然简单，但只要严格执行，也能长期盈利。
+
+海龟交易的具体规则是：当今天的收盘价大于过去20个交易日中的最高价时，以收盘价买入；买入后，当收盘价小于过去10个交易日中的最低价时，以收盘价卖出。
+
+MA均线规则是：当今天的收盘价大于过去20日平均值的high门限时买入，低于平均值的low门限时卖出
